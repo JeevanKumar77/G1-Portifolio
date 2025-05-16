@@ -48,8 +48,8 @@ const Contact = () => {
     {
       icon: <Mail className="w-5 h-5" />,
       title: "Email",
-      value: "nanijeevan662@gmail.com",
-      link: "mailto:nanijeevan662@gmail.com",
+      value: "nanijeevan552@gmail.com",
+      link: "mailto:nanijeevan552@gmail.com",
     },
     {
       icon: <Phone className="w-5 h-5" />,

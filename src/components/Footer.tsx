@@ -45,7 +45,7 @@ const Footer = () => {
                 </Button>
               </a>
               <a
-                href="mailto:nanijeevan662@gmail.com"
+                href="mailto:nanijeevan552@gmail.com"
                 aria-label="Email me"
               >
                 <Button size="icon" variant="outline" className="rounded-full">
