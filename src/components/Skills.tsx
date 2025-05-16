@@ -1,28 +1,20 @@
+
 import { Card, CardContent } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
 
 interface SkillProps {
   name: string;
-  level: number;
   icon: string;
 }
 
-const SkillCard = ({ name, level, icon }: SkillProps) => {
+const SkillCard = ({ name, icon }: SkillProps) => {
   return (
     <Card className="border-none shadow-lg bg-card">
       <CardContent className="p-6">
-        <div className="flex items-center gap-4 mb-4">
+        <div className="flex items-center gap-4">
           <div className="w-10 h-10 flex items-center justify-center rounded-md bg-teal-500/20 text-teal-400">
             <span className="text-lg">{icon}</span>
           </div>
           <h3 className="font-medium text-lg">{name}</h3>
-        </div>
-        <div className="space-y-2">
-          <div className="flex justify-between text-sm mb-1">
-            <span>Proficiency</span>
-            <span>{level}%</span>
-          </div>
-          <Progress value={level} className="h-2 bg-gray-700" />
         </div>
       </CardContent>
     </Card>
@@ -31,14 +23,13 @@ const SkillCard = ({ name, level, icon }: SkillProps) => {
 
 const Skills = () => {
   const skills: SkillProps[] = [
-    { name: "Python", level: 90, icon: "🐍" },
-    { name: "HTML & CSS", level: 85, icon: "🌐" },
-    { name: "JavaScript", level: 80, icon: "📜" },
-    { name: "React", level: 75, icon: "⚛️" },
-    { name: "Django", level: 85, icon: "🎯" },
-    { name: "Problem Solving", level: 90, icon: "🧩" },
-    { name: "Machine Learning", level: 70, icon: "🤖" },
-    { name: "Git & GitHub", level: 80, icon: "📊" },
+    { name: "Python", icon: "🐍" },
+    { name: "HTML & CSS", icon: "🌐" },
+    { name: "JavaScript", icon: "📜" },
+    { name: "React", icon: "⚛️" },
+    { name: "Java", icon: "☕" },
+    { name: "Spring Boot", icon: "🍃" },
+    { name: "Machine Learning", icon: "🤖" },
   ];
 
   return (
@@ -53,7 +44,7 @@ const Skills = () => {
               className="animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <SkillCard name={skill.name} level={skill.level} icon={skill.icon} />
+              <SkillCard name={skill.name} icon={skill.icon} />
             </div>
           ))}
         </div>
