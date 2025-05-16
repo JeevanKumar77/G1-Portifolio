@@ -1,15 +1,11 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
 const About = () => {
   const downloadCV = () => {
     // This is a placeholder function that would normally handle CV download
     alert("CV download functionality would be implemented here");
   };
-
-  return (
-    <section id="about" className="py-20 relative">
+  return <section id="about" className="py-20 relative">
       {/* Background Elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-40 right-20 w-80 h-80 bg-teal-500/5 rounded-full blur-3xl"></div>
@@ -20,11 +16,7 @@ const About = () => {
           <div className="w-full lg:w-2/5 flex justify-center lg:justify-start">
             <div className="relative max-w-sm">
               <div className="w-full aspect-[3/4] bg-card rounded-xl overflow-hidden border border-teal-900/50">
-                <img
-                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=500&auto=format&fit=crop"
-                  alt="Jeevan Kumar working on code"
-                  className="w-full h-full object-cover"
-                />
+                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=500&auto=format&fit=crop" alt="Jeevan Kumar working on code" className="w-full h-full object-cover" />
               </div>
               
               <div className="absolute -bottom-6 -right-6 bg-card p-4 rounded-lg border border-teal-900/50 shadow-xl">
@@ -40,7 +32,7 @@ const About = () => {
           <div className="w-full lg:w-3/5">
             <h2 className="section-title">About Me</h2>
             
-            <p className="text-lg text-gray-300 mb-6">
+            <p className="text-lg text-gray-300 mb-6 text-justify">
               I am a passionate student with a strong interest in coding and problem-solving. 
               Eager to apply my programming skills in real-world scenarios and gain 
               hands-on experience in software development. Highly motivated and adaptable, 
@@ -67,8 +59,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
