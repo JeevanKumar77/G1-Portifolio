@@ -1,13 +1,10 @@
-
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
-
 interface ServiceProps {
   icon: string;
   title: string;
   description: string;
 }
-
 const ServiceCard = ({
   icon,
   title,
@@ -29,7 +26,6 @@ const ServiceCard = ({
       </CardFooter>
     </Card>;
 };
-
 const Services = () => {
   const services: ServiceProps[] = [{
     icon: "🌐",
@@ -48,23 +44,6 @@ const Services = () => {
     title: "AI/ML Solutions",
     description: "Implementing machine learning models and AI-driven solutions to solve complex problems."
   }];
-  
-  return (
-    <section id="services" className="py-20">
-      <div className="container mx-auto px-4">
-        <h2 className="section-title text-center mb-12">Services I Offer</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service, index) => (
-            <div key={service.title} className="animate-fade-in" style={{
-              animationDelay: `${index * 0.1}s`
-            }}>
-              <ServiceCard {...service} />
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+  return;
 };
-
 export default Services;
