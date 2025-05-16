@@ -1,7 +1,9 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
+
 interface ProjectProps {
   title: string;
   description: string;
@@ -11,6 +13,7 @@ interface ProjectProps {
   liveUrl?: string;
   category: string;
 }
+
 const ProjectCard = ({
   project
 }: {
@@ -46,6 +49,7 @@ const ProjectCard = ({
       </CardContent>
     </Card>;
 };
+
 const Projects = () => {
   const [filter, setFilter] = useState("all");
   const projects: ProjectProps[] = [{
@@ -90,7 +94,16 @@ const Projects = () => {
         <h2 className="section-title text-center mb-12">My Projects</h2>
 
         <div className="flex flex-wrap justify-center gap-2 mb-12">
-          {categories.map(category => {})}
+          {categories.map(category => (
+            <Button 
+              key={category.id}
+              variant={filter === category.id ? "default" : "outline"}
+              className={filter === category.id ? "bg-teal-600 hover:bg-teal-700" : ""}
+              onClick={() => setFilter(category.id)}
+            >
+              {category.name}
+            </Button>
+          ))}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -110,4 +123,5 @@ const Projects = () => {
       </div>
     </section>;
 };
+
 export default Projects;
