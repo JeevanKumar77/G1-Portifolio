@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 
@@ -23,7 +22,7 @@ const SkillCard = ({ name, level, icon }: SkillProps) => {
             <span>Proficiency</span>
             <span>{level}%</span>
           </div>
-          <Progress value={level} className="h-2 bg-gray-700" indicatorClassName="bg-teal-500" />
+          <Progress value={level} className="h-2 bg-gray-700" />
         </div>
       </CardContent>
     </Card>

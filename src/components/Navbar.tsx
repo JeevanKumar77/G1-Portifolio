@@ -1,7 +1,6 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { GitHub, Linkedin, Mail, Menu, X } from "lucide-react";
+import { Github, Linkedin, Mail, Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -77,7 +76,7 @@ const Navbar = () => {
               aria-label="GitHub profile"
             >
               <Button size="icon" variant="ghost" className="rounded-full">
-                <GitHub size={20} />
+                <Github size={20} />
               </Button>
             </a>
             <a
@@ -140,7 +139,7 @@ const Navbar = () => {
               aria-label="GitHub profile"
             >
               <Button size="icon" variant="outline" className="rounded-full">
-                <GitHub size={20} />
+                <Github size={20} />
               </Button>
             </a>
             <a
