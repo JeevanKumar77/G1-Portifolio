@@ -118,7 +118,7 @@ Ch. Jeevan Kumar</span>
               {/* Hero image container with glassy effect */}
               <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-2xl bg-gradient-to-br from-teal-500/20 to-teal-700/20 backdrop-blur-sm border border-teal-500/20 flex items-center justify-center p-2">
                 <div className="w-full h-full rounded-xl overflow-hidden border-2 border-teal-500/30 shadow-[0_0_25px_rgba(20,184,166,0.2)]">
-                  <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=500&auto=format&fit=crop" alt="Profile placeholder" className="w-full h-full object-cover" />
+                  <img alt="Profile placeholder" className="w-full h-full object-cover" src="/lovable-uploads/4fce4925-24c9-484b-abff-db8313824246.jpg" />
                 </div>
                 
                 {/* Floating badges */}
